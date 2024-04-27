@@ -1,0 +1,128 @@
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loginTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .head {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .loginInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .loginButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .loginButton:hover {
+    background-color: #3e8e41;
+  }
+  
+  .loginButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .loginRegisterButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #337ab7;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .loginRegisterButton:hover {
+    background-color: #23527c;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Animations */
+  
+  .login {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .loginForm {
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  .loginButton {
+    animation: pulse 1s infinite;
+  }
+  
+  .loginRegisterButton {
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
